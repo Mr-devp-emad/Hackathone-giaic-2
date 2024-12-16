@@ -3,43 +3,121 @@
 const Featureposts = () => {
   return (
     
-    <main className="flex-grow">
-    <section className="text-center my-8">
-      <h1 className="text-3xl font-bold">Featured Posts</h1>
-      <p className="text-gray-500 mt-2">
-        Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
-      </p>
-    </section>
+    <section className="py-16 bg-gray-50">
+  <div className="text-center mb-8">
+    <p className="text-blue-500 font-semibold text-sm">Practice Advice</p>
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
+      Featured Posts
+    </h2>
+    <p className="text-gray-500 mt-2 text-sm sm:text-base">
+      Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics.
+    </p>
+  </div>
 
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-      {[1, 2, 3].map((post, idx) => (
-        <div
-          key={idx}
-          className="border rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow"
-        >
-          <img
-            src={`/assets/amb.png`}
-            alt="Post Image"
-            className="w-348px h-300 object-cover"
-          />
-          <div className="p-4">
-            <span className="text-xs text-blue-500">Google Trending New</span>
-            <h2 className="font-semibold text-lg mt-2">Loudest à la Madison #1 (L&apos;Integral)</h2>
-            <p className="text-sm text-gray-600 mt-2">
-              We focus on ergonomics and meeting you where you work. It&apos;s only a keystroke away.
-            </p>
-            <div className="flex justify-between items-center mt-4 text-sm text-gray-400">
-              <span>22 April 2021</span>
-              <span>10 comments</span>
-            </div>
-            <button className="text-blue-600 text-sm mt-4">Learn More &rarr;</button>
-          </div>
+  {/* Responsive Cards Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto px-4">
+    {/* Card 1 */}
+    <div className="bg-white shadow-md rounded-lg overflow-hidden group">
+      <div className="relative">
+        <img
+          src="/assets/road.jpg"
+          alt="Post 1"
+          className="w-full h-56 object-cover"
+        />
+        <span className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+          NEW
+        </span>
+      </div>
+      <div className="p-6">
+        <p className="text-blue-500 text-xs font-semibold mb-2">Google Trending New</p>
+        <h3 className="text-gray-800 font-bold text-lg mb-2">
+          Loudest à la Madison #1 (L'integral)
+        </h3>
+        <p className="text-gray-600 text-sm mb-4">
+          We focus on ergonomics and meeting you where you work. It’s only a keystroke away.
+        </p>
+        <div className="flex items-center text-gray-400 text-xs space-x-4">
+          <span>📅 22 April 2021</span>
+          <span>💬 10 comments</span>
         </div>
-      ))}
-    </section>
-  </main>
+        <a
+          href="#"
+          className="text-blue-500 font-semibold text-sm inline-block mt-4 hover:underline"
+        >
+          Learn More &rarr;
+        </a>
+      </div>
+    </div>
 
-  )
-}
+    {/* Card 2 */}
+    <div className="bg-white shadow-md rounded-lg overflow-hidden group">
+      <div className="relative">
+        <img
+          src="/assets/pinkcar.jpg"
+          alt="Post 2"
+          className="w-full h-56 object-cover"
+        />
+        <span className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+          NEW
+        </span>
+      </div>
+      <div className="p-6">
+        <p className="text-blue-500 text-xs font-semibold mb-2">Google Trending New</p>
+        <h3 className="text-gray-800 font-bold text-lg mb-2">
+          Loudest à la Madison #1 (L'integral)
+        </h3>
+        <p className="text-gray-600 text-sm mb-4">
+          We focus on ergonomics and meeting you where you work. It’s only a keystroke away.
+        </p>
+        <div className="flex items-center text-gray-400 text-xs space-x-4">
+          <span>📅 22 April 2021</span>
+          <span>💬 10 comments</span>
+        </div>
+        <a
+          href="#"
+          className="text-blue-500 font-semibold text-sm inline-block mt-4 hover:underline"
+        >
+          Learn More &rarr;
+        </a>
+      </div>
+    </div>
+
+    {/* Card 3 */}
+    <div className="bg-white shadow-md rounded-lg overflow-hidden group">
+      <div className="relative">
+        <img
+          src="/assets/umbrella.jpg"
+          alt="Post 3"
+          className="w-full h-56 object-cover"
+        />
+        <span className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+          NEW
+        </span>
+      </div>
+      <div className="p-6">
+        <p className="text-blue-500 text-xs font-semibold mb-2">Google Trending New</p>
+        <h3 className="text-gray-800 font-bold text-lg mb-2">
+          Loudest à la Madison #1 (L'integral)
+        </h3>
+        <p className="text-gray-600 text-sm mb-4">
+          We focus on ergonomics and meeting you where you work. It’s only a keystroke away.
+        </p>
+        <div className="flex items-center text-gray-400 text-xs space-x-4">
+          <span>📅 22 April 2021</span>
+          <span>💬 10 comments</span>
+        </div>
+        <a
+          href="#"
+          className="text-blue-500 font-semibold text-sm inline-block mt-4 hover:underline"
+        >
+          Learn More &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      )}
+    
 
 export default Featureposts
